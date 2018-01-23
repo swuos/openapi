@@ -1,0 +1,29 @@
+{
+  "repositories": {
+    "packagist": {
+      "type": "composer",
+      "url": "https://packagist.phpcomposer.com"
+    }
+  },
+  "config": {
+    "secure-http": false,
+    "preferred-install": "dist"
+  },
+  "autoload": {
+    "psr-0": {
+      "Dao": "application/models/Dao",
+      "Service": "application/models/Service"
+    },
+    "psr-4": {
+      "SwuOS\\Openapi\\Exception\\": "application/Exception/",
+      "SwuOS\\Openapi\\Library\\": "application/Library/",
+      "SwuOS\\Openapi\\Command\\": "application/Command/"
+    }
+  },
+  "require": {
+    "monolog/monolog": "1.23.0",
+    "illuminate/database": "5.5.17",
+    "illuminate/validation": "5.5.17",
+    "symfony/console": "4.0.3"
+  }
+}
