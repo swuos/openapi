@@ -21,6 +21,7 @@ class Bootstrap extends Bootstrap_Abstract
 
         if (substr($uri, 0, 4) === '/api') {
             Dispatcher::getInstance()->disableView();
+            echo '666';
         }
     }
 
